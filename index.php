@@ -247,7 +247,7 @@ if ($data_level == "Administrator") {
 									</a>
 								</li>
 								<li class="nav-item">
-									<a href="?page=data_halaman" class="nav-link">
+									<a href="?page=edit_halaman&kode=1" class="nav-link">
 										<i class="nav-icon far fa-circle text-warning"></i>
 										<p>Edit Halaman</p>
 									</a>
@@ -289,6 +289,7 @@ if (isset($_GET['page'])) {
         //Pengguna
         case 'data-pengguna':
             include "admin/pengguna/data_pengguna.php";
+		
             break;
         case 'add-pengguna':
             include "admin/pengguna/add_pengguna.php";

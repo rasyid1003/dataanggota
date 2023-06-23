@@ -31,7 +31,7 @@
                             
                             <td><?php echo $data['judul']; ?></td>
                             <td>
-                                <a href="?page=edit_sett&kode=<?php echo $data['id_sett']; ?>" title="Ubah" class="btn btn-success btn-sm">
+                                <a href="?page=edit_halaman&kode=<?php echo $data['id_sett']; ?>" title="Ubah" class="btn btn-success btn-sm">
                                     <i class="fa fa-edit"></i>
                                 </a>
                             </td>

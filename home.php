@@ -28,12 +28,17 @@
 		</style>
 	</head>
 	<body>
-		
+	<?php
+                    $no = 1;
+                    $sql = $koneksi->query("select * from tbl_sett");
+                    while ($data = $sql->fetch_assoc()) {
+                    ?>
 		<!-- header intro -->
 		<div class="header-intro">
 			<div class="navbar navbar-expand-md">
 				<div class="container">
-					<a href="index.html" class="navbar-brand"></h2></a>
+					<a href="index.html" class="navbar-brand"><?php echo $data['judul']; ?></h2></a>
+					
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-align-justify"></i>
 					</button>
@@ -165,14 +170,17 @@
 					<div class="col-md-6">
 						<div class="entry">
 							<span>About us</span>
-							<h2>We grow brands beyond set targets</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+							<h2><?php echo $data['about']; ?></h2>
+							<p><?php echo $data['isiabout']; ?></p>
 							<button class="button">Read More</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<?php
+                    }
+                    ?>
 		<!-- end about us -->
 
 		<!-- counter -->

@@ -9,7 +9,7 @@
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label">Cetak Kartu Anggota</label>
 				<div class="col-sm-6">
-					<select name="id_datang" id="id_datang" class="form-control select2bs4" required>
+					<select name="id_anggota" id="id_anggota" class="form-control select2bs4" required>
 						<option selected="selected">- Pilih Data -</option>
 						<?php
 				// ambil data dari database
